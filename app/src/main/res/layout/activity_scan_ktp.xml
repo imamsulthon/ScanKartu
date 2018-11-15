@@ -95,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:textStyle="bold"
-                        android:text="NIK"
+                        android:text="NIK:"
                         android:textAllCaps="true"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="12sp" />
@@ -124,7 +124,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:textStyle="bold"
-                        android:text="Nama"
+                        android:text="Nama:"
                         android:textAllCaps="true"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="12sp" />
@@ -238,7 +238,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:textStyle="bold"
-                        android:text="Agama"
+                        android:text="Agama:"
                         android:textAllCaps="true"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="12sp" />
@@ -267,7 +267,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:textStyle="bold"
-                        android:text="Status Perkawinan"
+                        android:text="Status Perkawinan:"
                         android:textAllCaps="true"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="12sp" />
@@ -279,7 +279,7 @@
                         android:layout_margin="8dp"
                         android:textColor="@android:color/black"
                         android:textSize="14sp"
-                        android:hint="Status perkawinan"
+                        android:hint="Kawin/Belum Kawin"
                         android:id="@+id/et_marital" />
 
                 </LinearLayout>
@@ -295,7 +295,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:textStyle="bold"
-                        android:text="Pekerjaan"
+                        android:text="Pekerjaan:"
                         android:textAllCaps="true"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="12sp" />
@@ -324,7 +324,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:textStyle="bold"
-                        android:text="Kewarganegaraan"
+                        android:text="Kewarganegaraan:"
                         android:textAllCaps="true"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="12sp" />
@@ -352,7 +352,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         android:textStyle="bold"
-                        android:text="Berlaku s/d"
+                        android:text="Berlaku s/d:"
                         android:textAllCaps="true"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="12sp" />

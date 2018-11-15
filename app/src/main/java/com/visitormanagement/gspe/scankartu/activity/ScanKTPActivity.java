@@ -47,7 +47,7 @@ public class ScanKTPActivity extends AppCompatActivity {
 
     private ImageView imageview;
     private Button btnReset, btnExtract, btnCancel, btnSave;
-    private EditText etNik, etName, etDob, etGender, etAddress, etReligion, etMarital, etJob, etNationality;
+    private EditText etNik, etName, etDob, etGender, etAddress, etReligion, etMaritalStatus, etJob, etNationality;
 
     GenericCardDBSource dbSource;
 
@@ -67,7 +67,7 @@ public class ScanKTPActivity extends AppCompatActivity {
         etGender = findViewById(R.id.et_gender);
         etAddress = findViewById(R.id.et_address);
         etReligion = findViewById(R.id.et_religion);
-        etMarital = findViewById(R.id.et_marital);
+        etMaritalStatus = findViewById(R.id.et_marital);
         etJob = findViewById(R.id.et_job);
         etNationality = findViewById(R.id.et_valid_date);
 
@@ -140,7 +140,7 @@ public class ScanKTPActivity extends AppCompatActivity {
     private void presentOutput(HashMap<String ,String > dataMap){
         if (dataMap != null) {
             etGender.setText(dataMap.get(Constants.gender));
-            etMarital.setText(dataMap.get(Constants.marital));
+            etMaritalStatus.setText(dataMap.get(Constants.marital));
             etDob.setText(dataMap.get(Constants.dob));
             etName.setText(dataMap.get(Constants.name));
         }
@@ -149,7 +149,7 @@ public class ScanKTPActivity extends AppCompatActivity {
     private void saveResult() {
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.show();
-        final String data = etGender.getText().toString() + " " + etMarital.getText().toString();
+        final String data = etGender.getText().toString() + " " + etMaritalStatus.getText().toString();
         if (!data.isEmpty()) {
             try {
                 GenericCard card = new GenericCard("Kartu Tanda Penduduk", data, currentImagePath);

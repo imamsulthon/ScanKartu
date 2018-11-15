@@ -78,7 +78,7 @@
                 android:layout_margin="10dp"
                 android:textIsSelectable="true"
                 android:textSize="12sp"
-                android:text="Extracted Info \nfrom image \nwill be \nshown here" />
+                android:hint="Hasil scan kartu\ndari foto \nakan ditampilkan \ndi sini" />
 
         </android.support.v7.widget.CardView>
 
