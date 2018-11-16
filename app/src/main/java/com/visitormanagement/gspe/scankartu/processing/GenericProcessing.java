@@ -43,7 +43,6 @@ public class GenericProcessing {
     }
 
     public String getFullString(FirebaseVisionText text) {
-        String fullText = String.valueOf(text);
-        return fullText;
+        return String.valueOf(text);
     }
 }

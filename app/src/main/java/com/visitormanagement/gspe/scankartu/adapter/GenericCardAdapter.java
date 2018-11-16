@@ -5,10 +5,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.visitormanagement.gspe.scankartu.R;
 import com.visitormanagement.gspe.scankartu.model.GenericCard;
+import com.visitormanagement.gspe.scankartu.utils.CameraUtils;
 
 import java.util.List;
 
@@ -35,6 +37,7 @@ public class GenericCardAdapter extends RecyclerView.Adapter<GenericCardAdapter.
         holder.tvCardType.setText(String.valueOf(card.getType()));
         holder.tvContent.setText(String.valueOf(card.getContent()));
         holder.tvId.setText(String.valueOf(card.getImagePath()));
+        holder.imageView.setImageBitmap(CameraUtils.getBitmap(card.getImagePath()));
     }
 
     @Override
@@ -52,12 +55,14 @@ public class GenericCardAdapter extends RecyclerView.Adapter<GenericCardAdapter.
         TextView tvCardType;
         TextView tvContent;
         TextView tvId;
+        ImageView imageView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             tvCardType = itemView.findViewById(R.id.tv_card_type);
             tvId = itemView.findViewById(R.id.tv_nik);
             tvContent = itemView.findViewById(R.id.tv_nama);
+            imageView = (ImageView)itemView.findViewById(R.id.imageview);
         }
     }
 }

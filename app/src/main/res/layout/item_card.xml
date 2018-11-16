@@ -29,57 +29,78 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <TextView
-                    android:id="@+id/label_nik"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="NIK"
-                    android:textAllCaps="true"
-                    android:textColor="@android:color/darker_gray"
-                    android:textSize="12sp" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:textColor="@android:color/darker_gray"
-                    android:textSize="12sp"
-                    android:layout_toRightOf="@id/label_name"
-                    android:hint="Nomor Induk Kependudukan"
-                    android:id="@+id/tv_nik" />
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/label_nik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="NIK"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
 
-                <TextView
-                    android:id="@+id/label_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Nama"
-                    android:textAllCaps="true"
-                    android:textColor="@android:color/darker_gray"
-                    android:textSize="12sp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp"
+                            android:hint="Nomor Induk Kependudukan"
+                            android:id="@+id/tv_nik" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:textColor="@android:color/darker_gray"
-                    android:textSize="12sp"
-                    android:layout_toRightOf="@id/label_name"
-                    android:hint="Nomor Induk Kependudukan"
-                    android:id="@+id/tv_nama" />
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/label_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Nama"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp"
+                            android:maxLines="10"
+                            android:hint="Nomor Induk Kependudukan"
+                            android:id="@+id/tv_nama" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/icon_card"/>
             </LinearLayout>
 
         </LinearLayout>

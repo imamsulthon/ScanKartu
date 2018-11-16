@@ -208,8 +208,7 @@ public class FileUtils {
         // Append the current date and time to the image name.
         Date date = new Date() ;
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(date);
-
-        return "expenseNotes_" + cardType + "_" + timeStamp + ".jpg";
+        return "scancard_" + cardType + "_" + timeStamp + ".jpg";
     }
 
     public static File createImageFile( Context context) throws IOException {

@@ -20,7 +20,7 @@ public class CameraUtils {
         Date date = new Date() ;
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(date);
 
-        return "expenseNotes_" + cardType + "_" + timeStamp + ".jpg";
+        return "scancard_" + cardType + "_" + timeStamp + ".jpg";
     }
 
     public static File createImageFile( Context context) throws IOException {
@@ -39,7 +39,6 @@ public class CameraUtils {
 
     public static Bitmap getBitmap(String path) {
         try {
-
             File f= new File(path);
             Bitmap myBitmap = BitmapFactory.decodeFile(f.getAbsolutePath());
             return myBitmap;
